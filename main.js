@@ -6,8 +6,8 @@ function submit()
     names_of_people.push(GuestName);
 	console.log(GuestName);    
     console.log(names_of_people);
-    var lenght_of_name = names_of_people.length;
-    console.log(lenght_of_name);
+    var length_of_name = names_of_people.length;
+    console.log(length_of_name);
 	document.getElementById("display_name").innerHTML=names_of_people.toString();
    }
 
@@ -18,8 +18,7 @@ function show()
 	var i= names_of_people.join("<br>");
 	console.log(names_of_people);
 	document.getElementById("p1").innerHTML=i.toString();
-	document.getElementById("     ").style.display="block";
-	// display the name in the id= sort_button
+	document.getElementById("sort_button").style.display="block";
 	}
 
 
@@ -43,6 +42,6 @@ function searching()
 				found=found+1;
 			}	
 		}
-	document.getElementById("p2").innerHTML="name found "+found+" time/s";
+	document.getElementById("p2").innerHTML="name found " +found+ " time/s";
 	console.log("found name "+found+" time/s");
 }
